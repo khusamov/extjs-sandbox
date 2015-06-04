@@ -26,7 +26,36 @@
 	Поэтому наша рамка больше получилась.
 	2) Внутри div, который является рамкой, находится мусорный элемент: <div length="0"></div>
 	3) Ext JS нашей рамки присвоил id="ext-element-2". Это в общем неплохо, но мы не запрашивали!
+	4) Кнопке невозможно нажать.
 	
+*/
+
+/*
+
+На изучение (создание дом-элементов похоже):
+
+http://docs.sencha.com/extjs/5.1/5.1.1-apidocs/source/Element4.html#Ext-dom-Element-method-mask
+
+            maskEl = Ext.DomHelper.append(dom, {
+                role: 'presentation',
+                cls : Ext.baseCSSPrefix + "mask " + Ext.baseCSSPrefix + "border-box",
+                children: {
+                    role: 'presentation',
+                    cls : msgCls ? EXTELMASKMSG + " " + msgCls : EXTELMASKMSG,
+                    cn  : {
+                        tag: 'div',
+                        role: 'presentation',
+                        cls: Ext.baseCSSPrefix + 'mask-msg-inner',
+                        cn: {
+                            tag: 'div',
+                            role: 'presentation',
+                            cls: Ext.baseCSSPrefix + 'mask-msg-text',
+                            html: msg || ''
+                        }
+                    }
+                }
+            }, true);
+
 */
 
 /**
