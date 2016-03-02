@@ -6,9 +6,6 @@ temp
 node_modules
 bower_components
 
-/.build/
-build/
-/build/
 bootstrap.js
 bootstrap-data.js
 bootstrap-files.js
